@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ActionRPGLearning.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ActionRPGLearning.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ActionRPGLearningEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ActionRPGLearning">
+      <UniqueIdentifier>{832FCC06-BCDD-3941-AF39-4128D67F5C16}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ActionRPGLearning\ActionRPGLearning.Build.cs">
+      <Filter>Source\ActionRPGLearning</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ActionRPGLearning\ActionRPGLearning.cpp">
+      <Filter>Source\ActionRPGLearning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ActionRPGLearning\ActionRPGLearning.h">
+      <Filter>Source\ActionRPGLearning</Filter>
+    </ClCompile>
+    <Filter Include="Source\ActionRPGLearning\Private">
+      <UniqueIdentifier>{727085D4-8B7D-3D0F-BA72-0143AB70983F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ActionRPGLearning\Private\Items">
+      <UniqueIdentifier>{349516EA-ACC2-38BA-BB4D-C0D427137A16}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ActionRPGLearning\Private\Items\Item.cpp">
+      <Filter>Source\ActionRPGLearning\Private\Items</Filter>
+    </ClCompile>
+    <Filter Include="Source\ActionRPGLearning\Public">
+      <UniqueIdentifier>{226D6756-7270-3294-BBF1-EAC5979536FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ActionRPGLearning\Public\Items">
+      <UniqueIdentifier>{3CEA9A10-C604-3C96-B031-E460F802E131}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ActionRPGLearning\Public\Items\Item.h">
+      <Filter>Source\ActionRPGLearning\Public\Items</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/chase/Desktop/Unreal Projects/ActionRPGLearning/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/chase/Desktop/Unreal Projects/ActionRPGLearning/Content/StarterContent/Maps/Minimal_Default.umap",
+				"C:/Users/chase/Desktop/Unreal Projects/ActionRPGLearning/Content/StarterContent/Maps/RPGLevel.umap"
+			]
+		}
+	]
+}
