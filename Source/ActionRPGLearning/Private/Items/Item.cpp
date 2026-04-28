@@ -14,12 +14,13 @@ void AItem::BeginPlay()
 {
 	Super::BeginPlay(); //calling the parent class's BeginPlay// the parent version might have functionality that we want to keep, so we call it first before adding our own functionality
 	
-	UE_LOG(LogTemp, Warning, TEXT("Begin play called!"));
+	/*UE_LOG(LogTemp, Warning, TEXT("Begin play called!"));
 
 	if (GEngine)
 	{
 		GEngine->AddOnScreenDebugMessage(1, 60.f, FColor::Cyan, FString("ON SCREEN MESSAGE!!!"));
 	}
+	*/
 }
 
 
@@ -27,5 +28,14 @@ void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-}
+	/* UE_LOG(LogTemp, Warning, TEXT("Delta Time: %f"), DeltaTime);
 
+	if (GEngine)
+	{
+		FString Name = GetName();
+		FString Message = FString::Printf(TEXT("Item Name: %s"), *Name);
+		GEngine->AddOnScreenDebugMessage(1, 60.f, FColor::Cyan, Message);
+		UE_LOG(LogTemp, Warning, TEXT("Item Name: %s"), *Name);
+	}
+	*/
+}
