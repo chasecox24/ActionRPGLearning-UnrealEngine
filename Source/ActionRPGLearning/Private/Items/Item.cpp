@@ -19,8 +19,10 @@ void AItem::BeginPlay()
 	
 	UWorld* World = GetWorld();
 	FVector Location = GetActorLocation();
-
+	FVector Forward = GetActorForwardVector();
+	
 	DRAW_DEBUG_SPHERE(Location);
+	DRAW_DEBUG_LINE(Location, Location + Forward * 100.f);
 	
 
 	/*UE_LOG(LogTemp, Warning, TEXT("Begin play called!"));
@@ -36,6 +38,8 @@ void AItem::BeginPlay()
 void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+
 
 	/* UE_LOG(LogTemp, Warning, TEXT("Delta Time: %f"), DeltaTime);
 
