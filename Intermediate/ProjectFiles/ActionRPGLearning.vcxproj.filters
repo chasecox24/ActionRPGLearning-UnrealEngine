@@ -57,4 +57,9 @@
       <Filter>Source\ActionRPGLearning\Public\Items</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\ActionRPGLearning\DebugMacros.h">
+      <Filter>Source\ActionRPGLearning</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
