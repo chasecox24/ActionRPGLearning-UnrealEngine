@@ -8,7 +8,7 @@ FVector Forward = GetActorForwardVector(); //gets forward vector of actor
 DRAW_DEBUG_LINE(Location, Location + Forward * 100.f);
 
 DEBUG SPHERE
-# include "DrawDebugHelpers.h" : debug helper functions
+#include "DrawDebugHelpers.h"
 DrawDebugSphere()
 UWorld* World = GetWorld(); //will get the world the actor is in// return null if actor isnt in world
 FVector Location = GetActorLocation(); //get the location of the root component
