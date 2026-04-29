@@ -2,6 +2,9 @@
 
 
 #include "Items/Item.h"
+#include "DrawDebugHelpers.h"
+#include "ActionRPGLearning/ActionRPGLearning.h"
+
 
 AItem::AItem()
 {
@@ -14,6 +17,12 @@ void AItem::BeginPlay()
 {
 	Super::BeginPlay(); //calling the parent class's BeginPlay// the parent version might have functionality that we want to keep, so we call it first before adding our own functionality
 	
+	UWorld* World = GetWorld();
+	FVector Location = GetActorLocation();
+
+	DRAW_DEBUG_SPHERE(Location);
+	
+
 	/*UE_LOG(LogTemp, Warning, TEXT("Begin play called!"));
 
 	if (GEngine)
