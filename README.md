@@ -18,3 +18,11 @@ FVector Location = GetActorLocation(); //get the location of the root component
 If we #define the macro inside the GameName.h, then we can use it anywhere.
 #include "GameName/GameName.h"
 We have to put the GameNameFolder before the header file so the compiler knows where it is.
+
+#define DRAW_DEBUG_POINT(Location) if (GetWorld()) DrawDebugPoint(GetWorld(), Location, 15.f, FColor::Green, true);
+
+#define DRAW_DEBUG_VECTOR(StartLocation, EndLocation) if (GetWorld()) \
+{\
+DrawDebugLine(GetWorld(), StartLocation, EndLocation, FColor::Blue, true, -1.f, 0, 1.0f);\
+DrawDebugPoint(GetWorld(), EndLocation, 15.f, FColor::Green, true);\
+}
