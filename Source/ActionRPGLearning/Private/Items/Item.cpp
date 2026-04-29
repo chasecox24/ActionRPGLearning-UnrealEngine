@@ -22,9 +22,10 @@ void AItem::BeginPlay()
 	FVector Forward = GetActorForwardVector();
 	
 	DRAW_DEBUG_SPHERE(Location);
-	DRAW_DEBUG_LINE(Location, Location + Forward * 100.f);
+	//DRAW_DEBUG_LINE(Location, Location + Forward * 100.f);
+	//DRAW_DEBUG_POINT(Location + Forward * 100.f);
+	DRAW_DEBUG_VECTOR(Location, Location + Forward * 100.f);
 	
-
 	/*UE_LOG(LogTemp, Warning, TEXT("Begin play called!"));
 
 	if (GEngine)
