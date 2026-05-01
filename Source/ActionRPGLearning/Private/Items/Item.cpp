@@ -17,6 +17,7 @@ void AItem::BeginPlay()
 	Super::BeginPlay(); //calling the parent class's BeginPlay// the parent version might have functionality that we want to keep, so we call it first before adding our own functionality
 	
 	SetActorLocation(FVector(0.f, 0.f, 50.f));
+	SetActorRotation(FRotator(0.f, 45.f, 0.f));
 
 	UWorld* World = GetWorld();
 	FVector Location = GetActorLocation();
