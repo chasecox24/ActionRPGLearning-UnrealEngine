@@ -16,10 +16,12 @@ void AItem::BeginPlay()
 {
 	Super::BeginPlay(); //calling the parent class's BeginPlay// the parent version might have functionality that we want to keep, so we call it first before adding our own functionality
 	
+	SetActorLocation(FVector(0.f, 0.f, 50.f));
+
 	UWorld* World = GetWorld();
 	FVector Location = GetActorLocation();
 	FVector Forward = GetActorForwardVector();
-	
+
 	DRAW_DEBUG_SPHERE(Location);
 	//DRAW_DEBUG_LINE(Location, Location + Forward * 100.f);
 	//DRAW_DEBUG_POINT(Location + Forward * 100.f);
