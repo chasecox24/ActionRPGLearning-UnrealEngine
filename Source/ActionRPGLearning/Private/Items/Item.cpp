@@ -38,6 +38,16 @@ void AItem::BeginPlay()
 	*/
 }
 
+float AItem::TransformedSin()
+{
+	return Amplitude * FMath::Sin(RunningTime * TimeConstant);
+}
+
+float AItem::TransformedCos()
+{
+	return Amplitude * FMath::Cos(RunningTime * TimeConstant);
+}
+
 
 void AItem::Tick(float DeltaTime)
 {
@@ -53,9 +63,8 @@ void AItem::Tick(float DeltaTime)
 
 	RunningTime += DeltaTime;
 
-	float DeltaZ = Amplitude * FMath::Sin(RunningTime * TimeConstant);
-
-	AddActorWorldOffset(FVector(0.f, 0.f, DeltaZ));
+	//float DeltaZ = Amplitude * FMath::Sin(RunningTime * TimeConstant);
+	//AddActorWorldOffset(FVector(0.f, 0.f, DeltaZ));
 
 	DRAW_DEBUG_SPHERE_SingleFrame(GetActorLocation());
 	DRAW_DEBUG_VECTOR_SingleFrame(GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 100.f);
