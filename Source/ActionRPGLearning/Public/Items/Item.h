@@ -28,10 +28,19 @@ protected:
 	float TransformedSin();
 
 	UFUNCTION(BlueprintPure)
-	float TransformedCos();
+	float TransformedCos();	
+
+	template<typename T>
+	T Avg(T first, T second);
 
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	float RunningTime;
 
 };
+
+template<typename T>
+inline T AItem::Avg(T first, T second)
+{
+	return (first + second) / 2;
+}
